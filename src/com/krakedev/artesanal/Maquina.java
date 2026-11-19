@@ -22,7 +22,7 @@ public class Maquina {
 		this.nombreCerveza = nombreCerveza;
 		this.descripcion = descripcion;
 		this.precioPorMl = precioPorMl;
-		this.capacidadMaxima = 100000;
+		this.capacidadMaxima = 10000;
 		this.cantidadActual = 0;
 	}
 
