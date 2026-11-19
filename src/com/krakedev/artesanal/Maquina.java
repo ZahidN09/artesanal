@@ -60,9 +60,13 @@ public class Maquina {
 
 	public void imprimir() {
 		String mensaje;
-		mensaje = "Nombre de cerveza: " + nombreCerveza + " , Descripción: " + descripcion + " , Prceio por Ml: "
+		mensaje = "Nombre de cerveza: " + nombreCerveza + " , Descripción: " + descripcion + " , Precio por Ml: "
 				+ precioPorMl + " , Capacidad Máxima: " + capacidadMaxima + " , Cantidad Actual: " + cantidadActual;
 		System.out.println(mensaje);
+	}
+	
+	public void llenarMaquina() {
+		this.cantidadActual = this.capacidadMaxima - 100;
 	}
 
 }
