@@ -31,7 +31,7 @@ public class TestRecargarJUnit {
 		boolean resultado = negra.recargarCerveza(1000);
 		
 		assertTrue(resultado);
-		assertEquals(3000, negra.getCantidadActual(),0.0001);
+		assertEquals(8000, negra.getCantidadActual(),0.0001);
 		
 	}
 

@@ -94,17 +94,16 @@ public class TestServirCervezaAl {
     @Test
     public void servirDespuesDeLlenarMaquinaCalculaValorCorrecto() {
         Maquina maquina = new Maquina("Amber", "Cerveza ámbar", 0.75, 5000, "MAQ-005");
-        maquina.llenarMaquina(); // capacidadMaxima - 100 = 4900
+        maquina.llenarMaquina(); // capacidadMaxima - 200 = 4800
 
-        double valorPagado = maquina.servirCerveza(4900);
+        double valorPagado = maquina.servirCerveza(4800);
 
-        // 4900 * 0.75 = 3675.0
-        assertEquals(3675.0, valorPagado, TOLERANCIA,
-                "El valor a pagar debe ser 4900 * 0.75");
+        // 4800 * 0.75 = 3600.0
+        assertEquals(3600.0, valorPagado, TOLERANCIA,
+                "El valor a pagar debe ser 4800 * 0.75");
         assertEquals(0.0, maquina.getCantidadActual(), TOLERANCIA,
                 "Al servir todo, la cantidad actual debe quedar en 0");
     }
-
     // ------------------------------------------------------------------
     // Casos usando el constructor con capacidad por defecto (10000)
     // ------------------------------------------------------------------
