@@ -7,6 +7,7 @@ public class Maquina {
 	private double precioPorMl;
 	private double capacidadMaxima;
 	private double cantidadActual;
+	private String codigo;
 
 	public Maquina(String nombreCerveza, String descripcion, double precioPorMl, double capacidadMaxima) {
 
@@ -24,6 +25,10 @@ public class Maquina {
 		this.precioPorMl = precioPorMl;
 		this.capacidadMaxima = 10000;
 		this.cantidadActual = 0;
+	}
+
+	public String getCodigo() {
+		return codigo;
 	}
 
 	public String getNombreCerveza() {
