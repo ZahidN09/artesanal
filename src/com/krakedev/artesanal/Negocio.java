@@ -3,6 +3,10 @@ package com.krakedev.artesanal;
 public class Negocio {
 	private String nombre;
 	private Maquina maquinaA;
+	
+	public Negocio() {
+		
+	}
 
 	public Negocio(String nombre, Maquina maquinaA) {
 		//super();
