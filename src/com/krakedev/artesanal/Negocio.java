@@ -36,5 +36,14 @@ public class Negocio {
 		cliente.setCodigo(ultimoCodigo);
 		this.ultimoCodigo++;
 	}
+	
+	public void cargarMaquina() {
+		maquinaA.llenarMaquina();
+	}
+	
+	public void consumirCervezaMaquina(Cliente cliente,double ml) {
+		double valor = maquinaA.servirCerveza(ml);
+		cliente.setTotalConsumido(cliente.getTotalConsumido() + valor);
+	}
 
 }
